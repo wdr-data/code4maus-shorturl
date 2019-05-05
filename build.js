@@ -5,7 +5,7 @@ const fs = require('fs');
 const inPath = path.join(__dirname, 'redirects.ejs');
 const outPath = path.join(__dirname, 'site', '_redirects');
 
-const domain = 'https://programmieren.wdrmaus.de';
+const domain = 'https://staging.code4maus.wt.wdr.cloud';
 
 ejs.renderFile(inPath, { domain }, (err, str) => {
     if (err) {
